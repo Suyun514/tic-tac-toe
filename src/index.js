@@ -21,7 +21,7 @@ class Board extends React.Component {
 
     handleClick(i) {
         const squares = this.state.squares.slice();
-        
+
         if (calculateWinner(squares) || squares[i]) {
             return;
         }
@@ -78,8 +78,8 @@ class Game extends React.Component {
                     <Board />
                 </div>
                 <div className="game-info">
-                    <div>{ /* status */}</div>
-                    <ol>{ /* TODO */}</ol>
+                    <div>{/* status */}</div>
+                    <ol>{/* TODO */}</ol>
                 </div>
             </div>
         );
